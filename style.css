@@ -1,0 +1,175 @@
+body,html{
+	background-color: white;
+	margin: 0px;
+}
+
+#navbar-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	alignment-baseline: center;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	margin-top: 0px;
+}
+#nav-bar{
+	padding: 20px;
+	color: black;
+}
+#nav-bar a{
+	padding-right:50px;
+	padding-left: 50px;
+	color: black;
+	text-decoration: none;
+}
+
+#header-img{
+	width: 250px;
+	height: 40px;
+	padding: 10px;
+	align-content: center;
+}
+
+#hero{
+	text-align: center;
+	line-height: 1.5rem;
+}
+#form-container{
+	padding-top: 70px;
+}
+#submit,button,input{
+	margin: 7px;
+}
+input{
+	width: 250px;
+	height: 25px;
+	border:1px solid grey;
+}
+button,#submit{
+	background-color: #f1c40f;
+	color: black;
+	width: 100px;
+	height: 35px;
+	padding: 3px;
+	border:none;
+	font-size: 1em
+	font-weight: 900;
+}
+#submit:hover,button:hover{
+	background-color: orange;
+	cursor: pointer;
+	transition-property: background-color;
+	transition-delay: 0s;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+}
+#features{
+	margin: 5px;
+	padding-top: 30px;
+}
+
+#grid{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#icon{
+	color: orange;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	padding:5px;
+	margin:30px;
+}
+#desc{
+	width: 700px;
+	font-size: 1.1rem;
+}
+
+#video-container{
+	text-align: center;
+	padding: 30px;
+}
+
+#price-container{
+	display: flex;
+	padding: 20px;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 10px;
+}
+#card{
+	border:1px solid black;
+	width: 300px;
+	height: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#card-header{
+	background-color: #dddddd;
+	padding: 2px;
+}
+ul{
+	text-align: center;
+	align-items: center;
+	padding: 5px;
+}
+li{
+	list-style-type: none;
+}
+#card-footer{
+	align-items: center;
+	padding: 5px;
+}
+
+
+
+
+@media(max-width: 650px){
+	#navbar-container{
+    	display: flex;
+    	flex-direction: column;
+  	}
+  	#img-container{
+  		text-align: center;
+      margin:0px;
+      padding:0px;
+  	}
+  	#nav-bar{
+  		display: block;
+  	}
+  	#nav-bar a{
+      display:flex;
+      flex-direction:column;
+      text-align:center;
+      margin:0px;
+      padding:0px;
+  	}
+ 
+  	#form-container h2{
+      margin-top: 90px;
+  		font-size: 25px;
+  	}
+  	#icon{
+  		display: none;
+  	}
+  	#desc{
+  		text-align: center;
+  	}
+  	iframe{
+  		width: 400px;
+  		height: 250px;
+  	}
+  	#pricing-container{
+  		display: flex;
+  		flex-direction: column;
+  	}
+  	#card{
+  		display: block;
+  		width: calc(100%/3);
+  		height: auto;
+  	}
+}
